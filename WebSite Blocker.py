@@ -15,7 +15,7 @@ def Response():
 
 def getSiteFromTextAndBlock():
     global sites
-    sites = [x.strip() for x in displayText.get("1.0",END).split(',')] # all email form Text
+    sites = [x.strip() for x in displayText.get("1.0",END).split(',')] 
     try:        
         with open(hostsFile_path,"r+") as file:
                 content = file.read()
